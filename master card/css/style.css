@@ -1,0 +1,42 @@
+body{
+
+    margin: 0;
+    padding: 0;
+}
+.main {
+    display: inline-block;
+    height: 100px;
+    isolation: isolate;
+    position: relative;
+    width: 200px;
+    background-color: transparent;
+}
+
+.main::after,
+.main::before {
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    height: 100px;
+    position: absolute;
+    width: 100px;
+}
+
+.main::before {
+    background-color: #eb001b;
+    left: 0;
+    top: 0;
+}
+
+.main::after {
+    background-color: #f79e1b;
+    mix-blend-mode: hard-light;
+    right: 50px;
+    top: 0;
+} 
+.mastercard{
+width: 500px;
+height: 500px;
+font-size: xx-large;
+background-color: rgb(255, 255, 255);
+}
